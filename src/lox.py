@@ -27,7 +27,7 @@ class Lox:
             print("Sorry, the file doesn't exist!")
             sys.exit()
 
-            self.run(script)
+        self.run(script)
         # exit when first error is encountered
         if self.had_error:
             # FIXME: confirm the exit code
