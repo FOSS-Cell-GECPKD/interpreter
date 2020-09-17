@@ -1,4 +1,5 @@
 import sys
+from os.path import basename
 from scanner import Scanner
 
 
@@ -17,10 +18,14 @@ class Lox:
 
     # run file directly
     def runFile(self, path):
-        # TODO: If the file doesn't exist
+        # If the file doesn't exist
         # exit gracefully
-        with open(path) as f:
-            script = f.read()
+        try:
+            with open(path) as f:
+                script = f.read()
+        except IOError:
+            print(f"Can't open {basename(path)} : No such file exists")
+            sys.exit()
         self.run(script)
         # exit when first error is encountered
         if self.had_error:
