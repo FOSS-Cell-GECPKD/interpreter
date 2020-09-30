@@ -2,6 +2,7 @@ from token import Token
 from token_type import TokenType
 
 
+
 class Scanner:
     '''
     FLex/Lox or regex can be used to simplify this part
@@ -39,7 +40,6 @@ class Scanner:
         source: source code to be scanned
         '''
         self.source = source
-
     def scan_tokens(self):
         '''
         loop `scan_token` to find all the tokens
@@ -127,10 +127,20 @@ class Scanner:
             self.identifier()
 
         else:
+            
             # TODO: pythonic error
-            # self.error(self.line, 'unexpected character')
-            print("error")
+            # class Error(Exception):
 
+            # raise Error
+            #FIX THIS ERROR
+            class Error(Exception):
+                def __init__(self, line, message="unexpected character"):
+                    self.line = line
+                    self.message = message
+                    super().__init__(self.message)
+                # self.error(self.line, 'unexpected character')
+            raise Error(self.line)
+        
     def identifier(self):
         c = self.peek()
         while (c.isalnum()) or (c == '_'):

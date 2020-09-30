@@ -45,7 +45,7 @@ class Lox:
         self.report(line, "", msg)
 
     def report(self, line, where, msg):
-        print(f"[line {line}] Error{where}: {msg}")
+        print(f"[line {line}] Error{where}: {msg} ")
 
 
 # TODO : move to different file if needed
