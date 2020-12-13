@@ -21,17 +21,16 @@ pip install .
 ## Todo
 
 PLox is still in it's beginning stage
-
-[x]  Lexical Analyser
-[] Abstract syntax tree
-[] recursive descent parsing
-[] lexical scope
-[] control flow
-[] function with parameters
-[] static variable resolution
-[] error detection
-[] classes
+- [x]  Lexical Analyser
+- [ ] Abstract syntax tree
+- [ ] recursive descent parsing
+- [ ] lexical scope
+- [ ] control flow
+- [ ] function with parameters
+- [ ] static variable resolution
+- [ ] error detection
+- [ ] classes
 
 ## Credits
 
-This project follow [crafting interpreters](https://craftinginterpreters.com/) by Robert Nystrom.
+This project follows [crafting interpreters](https://craftinginterpreters.com/) by Robert Nystrom.
