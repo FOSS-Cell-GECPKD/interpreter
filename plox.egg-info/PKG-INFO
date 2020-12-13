@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: plox
+Version: 0.0.1
+Summary: An implementation of lox in python
+Home-page: https://github.com/FOSS-Cell-GECPKD/interpreter
+License: UNKNOWN
+Description: # interpreter
+        
+        [![Join the chat at https://gitter.im/FOSS-Cell-GECPKD/interpreter](https://badges.gitter.im/FOSS-Cell-GECPKD/interpreter.svg)](https://gitter.im/FOSS-Cell-GECPKD/interpreter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

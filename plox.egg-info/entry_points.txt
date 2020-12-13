@@ -1,0 +1,3 @@
+[console_scripts]
+plox = plox.cli:main
+

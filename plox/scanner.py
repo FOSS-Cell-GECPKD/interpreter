@@ -1,5 +1,5 @@
-from token import Token
-from token_type import TokenType
+from plox.token import Token
+from plox.token_type import TokenType
 
 
 class Scanner:

@@ -1,6 +1,6 @@
 import sys
 from os.path import basename
-from scanner import Scanner
+from plox.scanner import Scanner
 
 
 # TODO: Add readme
@@ -51,16 +51,3 @@ class Lox:
 
     def report(self, line, where, msg):
         print(f"[line {line}] Error{where}: {msg}")
-
-
-# TODO : move to different file if needed
-# Entry point
-if __name__ == '__main__':
-    # FIXME: check if the argv is best practice
-    lox = Lox()
-    if len(sys.argv) > 2:
-        print("Usage: plox [script]")
-    elif len(sys.argv) == 2:
-        lox.runFile(sys.argv[1])
-    else:
-        lox.runPrompt()
