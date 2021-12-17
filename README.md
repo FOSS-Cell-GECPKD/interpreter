@@ -34,3 +34,5 @@ PLox is still in it's beginning stage
 ## Credits
 
 This project follows [crafting interpreters](https://craftinginterpreters.com/) by Robert Nystrom.
+
+This project was a part of FOSS OpenHack '20: https://openhack.gitbook.io/openhack-20/.
